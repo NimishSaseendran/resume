@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nimish Saseendran</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://kit.fontawesome.com/2dab161e1c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img class="logo" src="/portfolio/images/logo.jpg">
+                <ul id="side-menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openMenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Nimish</span> <br>Saseendran</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------  About  ---------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/portfolio/images/img.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello! I'm Nimish Saseendran, a B.Tech graduate with a passion for crafting secure and
+                        user-centric web experiences.
+                        My journey in technology has led me to a fascination with two vital aspects: Web Development and
+                        Cybersecurity.
+                        <br><br>In the digital realm, I find joy in architecting intuitive interfaces that bridge the
+                        gap between users
+                        and innovative solutions. From conceptualization to deployment, I thrive on creating websites
+                        that not only look
+                        exceptional but also prioritize seamless functionality and robust security measures.
+                        <br><br>With a keen eye for detail and a dedication to staying ahead of evolving cyber threats,
+                        I strive to deliver
+                        digital experiences that inspire trust and engagement. Let's connect and collaborate on weaving
+                        the future of the
+                        web together.
+                        <br><br>Let's connect and explore how we can innovate together in this exciting digital world!
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('internship')">Internship</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>HTML, CSS, JS, JQuery, Bootstrap</li>
+                            <li><span>Programming Languages</span><br>Python, C/C++, Java</li>
+                            <li><span>Cybersecurity</span><br>Vulnerability Assessment, Penetration Testing</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="tab-contents" id="internship">
+                        <ul>
+                            <li><span>Vulnerability Assessment</span><br>Using Tenable Nessus, perform various
+                                vulnerability
+                                assessments <br> and penetration tests to find the
+                                vulnerabilities of machines.<br>10/ 2022 - 12/ 2022</li>
+                            <li><span>Indian Rare Earth Ltd.</span><br>Studies and Examine different Rare Earth
+                                materials.
+                                <br>05/ 01/ 2022 - 11/ 01/ 2022
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.Tech in Mechanical Engineering</span><br>Younus College of Engineering and
+                                Technology,
+                                Kollam<br>CGPA: 6.9</li>
+                            <li><span>Higher Secondary</span><br>Govt. Mode; H S S, Vettikkavala<br>Score: 73%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------Certifications---------- -->
+    <div id="certifications">
+        <div class="container">
+            <h1 class="sub-title">My Certifications</h1>
+            <div class="certifications-list">
+
+                <div>
+                    <h2>HTML, CSS, JS, Git, Data Structure</h2>
+                    <p>- Codewithmosh</p>
+                </div>
+                <div>
+                    <h2>Python, C++, Java</h2>
+                    <p>- Codewithmosh</p>
+                </div>
+                <div>
+                    <h2>Certified Penetration Tester</h2>
+                    <p>- Redteam Hacker Academy</p>
+                </div>
+                <div>
+                    <h2>Digital Forensics, Ethical Hacking Essentials</h2>
+                    <p>- Codered, EC-Council</p>
+                </div>
+                <div>
+                    <h2>Advent of Cyber 2022, 2021</h2>
+                    <p>- Tryhackme</p>
+                </div>
+                <div>
+                    <h2>Inspection & Quality Control in Manufacturing</h2>
+                    <p>- National Programme on Technology Enhanced Learning</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------    Projects    -------------- -->
+
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="project-list">
+                <div class="project">
+                    <img src="/portfolio/images/pentest.jpg">
+                    <div class="layer">
+                        <h3>Penetration Testing.</h3>
+                        <p>Performed a penetration test on a vulnerable machine <br>
+                            Information gathered and found the machine's vulnerability. <br>
+                            Login using FTP and SSH to the machine. <br>
+                            Got sudo privileges using various techniques.</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="/portfolio/images/vulnassessment.jpg">
+                    <div class="layer">
+                        <h3>Vulnerability Assessment.</h3>
+                        <p>Performed a a vulnerability assessment on a Windows host machine using Tenable Nessus. <br>
+                            Found different possible remedies and steps to prevent getting access to the machine.</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="/portfolio/images/trolley.jpg">
+                    <div class="layer">
+                        <h3>Automated Man Following Trolley</h3>
+                        <p>Developed an automated man-following trolley that can be used for various purposes. <br>
+                            This trolley Automatically following a particular person helps you walk free without pulling
+                            a trolley. <br>
+                            This trolley can also assist blind people further in different places, like shopping malls,
+                            hospitals, etc.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------     Contact     ------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> nimishkannan62@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 9995397808</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/nimish-kannan-93255b225/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/_the_invisible_man___?igsh=MWU1bDJrazdnZDJidw%3D%3D"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                    <a href="/portfolio/resumePrgm.pdf" download class="btn btn2">Download CV</a>
+                </div>
+
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Nimish. made with <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+
+    <!-- -----------    script      ------------- -->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function openTab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById('side-menu');
+
+        function openMenu() {
+            sidemenu.style.right = '0';
+        }
+        function closeMenu() {
+            sidemenu.style.right = '-200px';
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyfCxQUH_nUMIYoE2eP_J0jzhEntdT5LqhK3H7buqqpf4SFXkKbZfAIi6RWsHZVqeXP/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        const msg = document.getElementById('msg')
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully!"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+
+</html>
